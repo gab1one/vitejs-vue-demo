@@ -1,9 +1,18 @@
-<script>
-
+<script lang="ts">
+export const RESIZE_DEBOUNCE = 100;
 </script>
 
 <script setup>
 import { ref } from 'vue'
+
+import {
+  onMounted,
+  watch,
+  computed,
+  ref,
+  nextTick,
+  onBeforeUnmount,
+} from "vue";
 
 defineProps({
   msg: String,
