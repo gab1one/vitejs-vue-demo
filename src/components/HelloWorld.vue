@@ -18,6 +18,8 @@ defineProps({
   msg: String,
 })
 
+const test = RESIZE_DEBOUNCE + 10;
+
 const count = ref(0)
 </script>
 
